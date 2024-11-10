@@ -1,7 +1,7 @@
 
 const CategoryList = () => {
     return (
-        <div className="p-4 md:p-2 lg:p-0">
+        <div className="p-4 md:p-2 lg:p-0 max-w-screen-xl mx-auto">
             <div className="mt-20 mb-10">
             <h2 className="text-3xl text-center mb-3">Job Category List</h2>
             <p className="text-center">Explore thousands of job opportunities with all the information you need. Its your future</p>
