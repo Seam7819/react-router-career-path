@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Job = ({ job }) => {
     console.log(job);
-    const { logo, job_title, company_name, remote_or_onsite, location, job_type, salary } = job;
+    const {id, logo, job_title, company_name, remote_or_onsite, location, job_type, salary } = job;
     return (
         <div className='max-w-screen-xl mx-auto border p-4 m-3 rounded-lg'>
             <img className='mb-4' src={logo} alt="" />
@@ -18,7 +18,7 @@ const Job = ({ job }) => {
                 <img src={"/Images/icons/money.png"} alt="" /><span>salary:{salary}</span>
             </div>
             <div className='mb-5'>
-            <NavLink><button className='btn btn-primary'>View Details</button></NavLink>
+            <NavLink to= {`/job/${id}`} ><button className='btn btn-primary'>View Details</button></NavLink>
             </div>
             
         </div>
